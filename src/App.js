@@ -2,10 +2,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
 import Home from './components/pages/Home';
 import Contato from './components/pages/Contato';
-import NovosProjetos from './components/pages/NovoProjeto';
+import NovosProjetos from './components/pages/NovosProjetos';
 import Empresa from './components/pages/Empresa';
 import Projetos from './components/pages/Projetos';
-
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
@@ -24,7 +23,7 @@ function App() {
           <Route exact path="/contato" element={<Contato />}></Route>
           <Route exact path="/empresa" element={<Empresa />}></Route>
           <Route exact path="/projetos" element={<Projetos />}></Route>
-          {/* <Route exact path="/novosprojetos" element={<NovosProjetos />}></Route> */}
+          <Route exact path="/novosprojetos" element={<NovosProjetos />}></Route>
         </Routes>
       </Container>
       <Footer />
