@@ -43,6 +43,17 @@
       "cost": 0,
       "services": [],
       "id": 4
+    },
+    {
+      "name": "Teste 5",
+      "budget": "5000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
     }
   ],
   "categories": [
