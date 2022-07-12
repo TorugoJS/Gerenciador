@@ -2,10 +2,10 @@
   "projects": [
     {
       "name": "Projeto atualizouu",
-      "budget": "20000",
+      "budget": "200",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "3",
+        "name": "Design"
       },
       "cost": 0,
       "services": [],
