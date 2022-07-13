@@ -9,6 +9,7 @@ import Container from '../layout/Container'
 import Message from '../layout/Message'
 import ProjectForm from '../project/ProjectForm'
 import ServiceForm from '../Service/ServiceForm'
+import ServiceCard from '../Service/ServiceCard'
 
 function Projeto() {
 
@@ -16,6 +17,7 @@ function Projeto() {
     const { id } = useParams()
 
     const [projeto, setProjeto] = useState([])
+    const [services, setServices] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
     const [showServiceForm, setShowServiceForm] = useState(false)
     const [message, setMessage] = useState()
@@ -31,6 +33,7 @@ function Projeto() {
             }).then(resp => resp.json())
                 .then((data) => {
                     setProjeto(data)
+                    setServices(data.services)
                 })
                 .catch(err => console.log)
         }, 1000)
@@ -97,10 +100,13 @@ function Projeto() {
             body: JSON.stringify(projeto)
         }).then((resp) => resp.json())
             .then((data) => {
-                //exibir os serviços
-                console.log(data)
+                setShowServiceForm(false)
             })
             .catch(err => console.log(err))
+
+    }
+
+    function removeService() {
 
     }
 
@@ -159,7 +165,18 @@ function Projeto() {
                     </div>
                     <h2>Serviços</h2>
                     <Container customClass="start">
-                        <p>itens de serviços</p>
+                        {services.length > 0 &&
+                            services.map((service) => (
+                                <ServiceCard
+                                    id={service.id}
+                                    name={service.name}
+                                    cost={service.cost}
+                                    description={service.description}
+                                    key={service.id}
+                                    handleRemove={removeService}
+                                />
+                            ))}
+                        {services.length === 0 && <p>Não há serviços cadastrados!</p>}
                     </Container>
                 </Container>
 
