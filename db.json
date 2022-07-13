@@ -1,15 +1,33 @@
 {
   "projects": [
     {
-      "name": "Projeto atualizouu",
-      "budget": "200",
+      "name": "Teste 1",
+      "budget": "2000",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 200,
+      "services": [
+        {
+          "name": "Teste 10",
+          "cost": "200",
+          "description": "Isso",
+          "id": "80de16aa-8e84-468e-a794-dc1fd199341f"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Teste 10",
+      "budget": "10000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
-      "id": 1
+      "id": 2
     }
   ],
   "categories": [
