@@ -4,15 +4,16 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // IMPORTANDO COMPONENTES
 
+import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import Contato from './components/pages/Contato';
 import NovosProjetos from './components/pages/NovosProjetos';
 import Empresa from './components/pages/Empresa';
 import Projetos from './components/pages/Projetos';
-import Container from './components/layout/Container';
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
+
 import Projeto from './components/pages/Projeto';
+import Container from './components/layout/Container';
+import Footer from './components/layout/Footer';
 
 
 
