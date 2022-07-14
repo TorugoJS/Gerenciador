@@ -7,25 +7,13 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 12500,
+      "cost": 4000,
       "services": [
         {
           "name": "dev node",
           "cost": "1000",
           "description": "dev node js",
           "id": "f13f4f13-78fa-4672-9a72-f6820e857c85"
-        },
-        {
-          "name": "dev php",
-          "cost": "5000",
-          "description": "php",
-          "id": "e87c6d59-9d2c-4e09-9f52-42664ae90a65"
-        },
-        {
-          "name": "dev python",
-          "cost": "3500",
-          "description": "dev py",
-          "id": "bb3342df-0cd8-455c-84b3-008e90a9482e"
         }
       ],
       "id": 1
