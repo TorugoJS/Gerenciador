@@ -1,3 +1,5 @@
+// COMPONENTE DA BARRA DE NAVEGAÇÃO
+
 import styles from './Home.module.css'
 import LinkButton from '../layout/LinkButton'
 import savings from '../../img/good-verry-svgrepo-com.svg'

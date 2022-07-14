@@ -1,4 +1,8 @@
+//
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+
+// IMPORTANDO COMPONENTES
 
 import Home from './components/pages/Home';
 import Contato from './components/pages/Contato';
@@ -13,22 +17,34 @@ import Projeto from './components/pages/Projeto';
 
 
 function App() {
+
   return (
+
     <Router>
-      <Navbar />
+
+      {/* BARRA DE NAVEGAÇÃO- Home, proj..*/}
+      <Navbar /> 
 
 
       <Container customClass="min-height">
-        <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-          <Route path="/contato" element={<Contato />}></Route>
-          <Route path="/empresa" element={<Empresa />}></Route>
-          <Route path="/projetos" element={<Projetos />}></Route>
-          <Route path="/novosprojetos" element={<NovosProjetos />}></Route>
-          <Route path="/projeto/:id" element={<Projeto />}></Route>
+
+        <Routes> {/*ROUTES PARA DIZER ONDE VAI OPERAR*/}
+
+
+
+          <Route exact path="/" element={<Home />} /> {/* NAVEGANDO NOS COMPONENTES, FAZENDO O REDIRECT*/}  {/*USANDO "EXACT" QUANDO O DESTINO FOR SOMENTE BARRA*/}
+          <Route path="/contato" element={<Contato />} /> {/* NAVEGANDO NOS COMPONENTES, FAZENDO O REDIRECT*/}
+          <Route path="/empresa" element={<Empresa />} /> {/* NAVEGANDO NOS COMPONENTES, FAZENDO O REDIRECT*/}
+          <Route path="/projetos" element={<Projetos />} /> {/* NAVEGANDO NOS COMPONENTES, FAZENDO O REDIRECT*/}
+          <Route path="/novosprojetos" element={<NovosProjetos />} /> {/* NAVEGANDO NOS COMPONENTES, FAZENDO O REDIRECT*/}
+          <Route path="/projeto/:id" element={<Projeto />} />
+
         </Routes>
+
       </Container>
-      <Footer />
+
+      <Footer /> {/*RODAPÉ*/}
+
     </Router>
 
   );

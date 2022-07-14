@@ -17,6 +17,24 @@
         }
       ],
       "id": 1
+    },
+    {
+      "name": "Teste 1",
+      "budget": "50000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 50,
+      "services": [
+        {
+          "name": "Teste 10",
+          "cost": "50",
+          "description": "dev node.js",
+          "id": "59371332-6ab0-4ee1-bf09-7845b37a05d5"
+        }
+      ],
+      "id": 2
     }
   ],
   "categories": [
