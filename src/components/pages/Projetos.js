@@ -23,6 +23,7 @@ function Projetos() {
     }
 
     useEffect(() => {
+
         setTimeout(() => {
             fetch('http://localhost:5000/projects', {
                 method: 'GET',
@@ -58,10 +59,15 @@ function Projetos() {
         <div className={styles.projetos_container}>
             <div className={styles.title_container}>
                 <h1>Meus Projetos</h1>
+
                 <LinkButton to="/novosprojetos" text="Criar Projeto" />
+
             </div>
+
             {message && <Message type="success" msg={message} />}
+
             {projetoMensagem && <Message type="success" msg={projetoMensagem} />}
+
             <Container customClass="start">
                 {projetos.length > 0 && projetos.map((project) =>
                     <ProjectCard id={project.id} name={project.name}
@@ -70,6 +76,7 @@ function Projetos() {
                         key={project.id}
                         handleRemove={removeProjeto}
                     />)}
+                    
                 {!removeLoading && <Loading />}
                 {removeLoading && projetos.length === 0 &&
                     <p>Não há projetos cadastrados!</p>
