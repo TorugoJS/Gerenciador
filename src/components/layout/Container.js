@@ -1,7 +1,7 @@
 import styles from './Container.module.css'
 
 //ALTERANDO ITENS COM PROPS
-function Container(props) {
+function Container(props)  {
     return (
         <div
         //UTILIZANDO {props.children} PARA DIZER QUE TERÃO FILHOS NA DIV PAI, ENCAPSULANDO DENTRO DO COMPONENTE.
